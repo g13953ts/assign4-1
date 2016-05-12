@@ -12,7 +12,7 @@ public class SCTest {
 		SnakeCamelUtil scUtil = new SnakeCamelUtil();
 		String expected = "AbCd";
 		String actual = scUtil.snakeToCamelcase("ab_cd");
-		assertThat(actual, is(not(expected)));
+		assertThat(actual, is(expected));
 	}
 
 	@Test
@@ -20,7 +20,7 @@ public class SCTest {
 		SnakeCamelUtil scUtil = new SnakeCamelUtil();
 		String expected = "abc_de";
 		String actual = scUtil.camelToSnakecase("AbcDe");
-		assertThat(actual, is(not(expected)));
+		assertThat(actual, is(expected));
 	}
 	
 	@Test
